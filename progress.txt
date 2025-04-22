@@ -1,0 +1,58 @@
+Objective:
+
+This assignment will test your understanding of JavaScript classes, inheritance, methods, and static properties/methods. You’ll create a basic inventory management system for a store.
+
+[ ] Part 1: Setting Up Classes
+
+    [ ] Create a Base Class: ProductProperties:
+    [ ] name (string): Name of the product.
+    [ ] price (number): Price of the product.
+    [ ] quantity (number): Quantity available in stock.
+
+    Methods:
+    [ ] constructor: Initializes the properties.
+    [ ] getTotalValue(): Returns the total value of the product in stock (price * quantity).
+    [ ] toString(): Returns a string representation of the product (e.g., "Product: Apple, Price: $2.50, Quantity: 50").
+
+
+[ ] Part 2: Adding Inheritance
+
+ [ ] Create a Subclass: PerishableProductProperties:
+    Inherits all properties from Product.
+    [ ] Adds a new property: expirationDate (string).
+    Methods:
+    [ ] constructor: Initializes all properties, including expirationDate.
+    [ ] Override toString(): Adds the expiration date to the string representation (e.g., "Product: Milk, Price: $1.50, Quantity: 10, Expiration Date: 2024-12-31").
+    [ ] Task: Create at least two instances of this class with sample data.
+
+Part 3: Static Methods and Properties
+    [ ] Add a Static Method to the Product Class Method: applyDiscount(products, discount)
+    [ ] Input: An array of Product or PerishableProduct objects and a discount percentage (e.g., 0.1 for 10%).
+    [ ] Output: Applies the discount to all products in the array by reducing their price.
+
+Part 4: Store Management
+
+    [ ] Create a Store ClassProperties inventory (array): Stores Product and PerishableProduct objects.
+    Methods: 
+    [ ] addProduct(product): Adds a product to the inventory.
+    [ ] getInventoryValue(): Returns the total value of all products in the inventory.
+    [ ] findProductByName(name): Finds a product by its name and returns it, or returns null if not found.
+
+
+Part 5: Testing the System
+
+Write a script to:
+
+    [ ] Create at least 5 products, including at least 2 PerishableProduct objects.
+    [ ] Add these products to a Store object.
+    [ ] Print the total inventory value before and after applying a 15% discount.
+    [ ] Find and print the details of a specific product by its name.
+
+
+Submission Requirements
+
+    [ ] Submit your repo link and live page.
+    [ ] Check if the submission is working. A non-working submission will result in a grade of 0
+    [ ] at least 20 commits; under 20 commits you will result in a grade of 0
+    [ ] Include comments to explain your code logic.
+    [ ] Ensure proper indentation and readable formatting.
